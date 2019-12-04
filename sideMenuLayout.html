@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/sideMenuLayout.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class='modalContainer'>
+        <div class = "modal">
+
+            <p id="modalClose"><i class="fas fa-times"></i></p>
+
+            <div class="modalElements">
+                    <!-- <div> -->
+                
+                        <!-- <label>login :</label> -->
+                        <input  id= 'editReportLogin' placeholder="login" type = 'text' value="bmmshaha" readonly>
+        
+                    <!-- </div> -->
+                        
+                    <!-- <div> -->
+                      
+                        <!-- <label>Issue : </label> -->
+                	    <input id="editReportIssue" name="notes" placeholder='name'>
+                                             
+                    <!-- </div> -->
+
+                    
+
+                    <!-- <div class = 'editReportReason'> -->
+
+                        <!-- <label>Reason For Incompletion:</label> -->
+                        <input id="editReportReason" placeholder="lastname" >
+                     
+                    <!-- </div> -->
+                    <!-- <div class = 'editReportReason'> -->
+                        
+                        <!-- <label>Reason For Incompletion:</label> -->
+                        <input id="editReportReason" placeholder='number'>
+                        <input id="editReportReason" placeholder='number'>
+                        <input id="editReportReason" placeholder='number'>
+                        <input id="editReportReason" placeholder='number'>
+
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <!-- <label>status : </label> -->
+                        <select id="editReportStatus">
+                            <option selected="selected">opened</option>
+                            <option>closed</option>
+                        </select>
+                    <!-- </div> -->
+            </div>
+
+            <div class="modalButtons">
+                <button class="button">SUBMIT</button>
+                <button class="clearButton">CLEAR</button>
+            </div>
+        </div>
+
+        </div>
+            
+    </div>
+    
+    <div class = "navBar">
+
+        <img src = 'images/amazon_logo_RGB_WHITE.png' height="30" width='130'>
+
+        <div class="links">
+
+            <a href="#">Home</a>
+            <a href="#">product</a>
+            <a href="#">campaign</a>
+            <a href="#">about</a>
+
+        </div>
+
+
+    </div>
+    <div class="container">
+
+        <div class="leftMenu">
+            <h2>Menu</h2>
+        </div>
+
+        <div class="body">
+
+            <div class="tiles">
+
+                <div id="buttons">
+
+                    <p>Buttons</p>
+                    <button class = "button" id="showModal">modal</button>
+                    <button class = "clearButton">modal</button>
+
+                </div>
+
+                <div id="dropdowns">
+
+                    <p>Input fields</p>
+                    <input id="editReportIssue" name="notes" placeholder='name'>
+
+                </div>
+                <div id="dropdowns">
+
+                    <p>Drop Downs</p>
+                    <select id="editReportStatus">
+                        <option selected="selected">opened</option>
+                        <option>closed</option>
+                    </select>
+
+                </div>
+
+                
+            </div>
+
+            
+
+
+            
+            
+           
+        </div>
+
+    </div>
+</body>
+<script src="js/sideMenuLayout.js"></script>
+</html>
