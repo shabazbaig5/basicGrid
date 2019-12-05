@@ -301,3 +301,69 @@ select:focus,input:focus{
 
 /* button and input fields' styling ends */
 
+
+/* Media queries */
+@media (max-width: 30em) { 
+
+    .tiles{
+
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        max-height:auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: center;
+        margin : 10px;
+    
+    }
+
+
+    .tiles div{
+
+        width : 20vh;
+        margin : 5px;
+        min-height : 20vh;
+
+    }
+
+    .modal{
+        width: auto;
+        height : auto;
+    }
+
+    .modalElements{
+
+        height: auto;
+        /* padding : 2px; */
+        display : grid;	
+        /* grid-gap: 5vh; */
+        
+        grid-template-columns: repeat(1,1fr);		
+        
+    }
+
+    .modalElements div{
+
+        /* padding : 20px; */
+        display : flex;	
+        /* margin:5px;		 */
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        /* justify-content: space-around; */
+    
+    
+    }
+
+    .leftMenu{
+
+       display: none;
+    }
+    
+
+ }
+
+
+
