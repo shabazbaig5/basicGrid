@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
     <link rel="stylesheet" href="css/sideMenuLayout.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,44 +24,21 @@
             <p id="modalClose"><i class="fas fa-times"></i></p>
 
             <div class="modalElements">
-                    <!-- <div> -->
-                
-                        <!-- <label>login :</label> -->
+            
                         <input  id= 'editReportLogin' placeholder="login" type = 'text' value="bmmshaha" readonly>
         
-                    <!-- </div> -->
-                        
-                    <!-- <div> -->
-                      
-                        <!-- <label>Issue : </label> -->
+                
                 	    <input id="editReportIssue" name="notes" placeholder='name'>
                                              
-                    <!-- </div> -->
-
-                    
-
-                    <!-- <div class = 'editReportReason'> -->
-
-                        <!-- <label>Reason For Incompletion:</label> -->
+                  
                         <input id="editReportReason" placeholder="lastname" >
                      
-                    <!-- </div> -->
-                    <!-- <div class = 'editReportReason'> -->
-                        
-                        <!-- <label>Reason For Incompletion:</label> -->
-                        <!-- <input id="editReportReason" placeholder='number'>
-                        <input id="editReportReason" placeholder='number'>
-                        <input id="editReportReason" placeholder='number'>
-                        <input id="editReportReason" placeholder='number'> -->
-
-                    <!-- </div> -->
-                    <!-- <div> -->
-                        <!-- <label>status : </label> -->
+                  
                         <select id="editReportStatus">
                             <option selected="selected">opened</option>
                             <option>closed</option>
                         </select>
-                    <!-- </div> -->
+                    
             </div>
 
             <div class="modalButtons">
@@ -92,36 +76,115 @@
 
             <div class="tiles">
 
-                <div id="buttons">
+                <ul class="tabs">
 
-                    <p>Buttons</p>
-                    <button class = "button" id="showModal">modal</button>
-                    <button class = "clearButton">modal</button>
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="#">Performance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Operations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" aria-disabled="true">Exceptions</a>
+                    </li>
+                </ul>
 
-                </div>
+            </div>
 
-                <div id="dropdowns">
+            <div>
+                <select id="monthSelector">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option disabled>August</option>
+                    <option>September</option>
+                    <option selected>October</option>
+                    <!-- <option>November</option> -->
+                </select>
+            </div>
 
-                    <p>Input fields</p>
-                    <input id="editReportIssue" name="notes" placeholder='name'>
+            <h3> RAP </h3>
 
-                </div>
-                <div id="dropdowns">
+            <div class='rapSection'>
 
-                    <p>Drop Downs</p>
-                    <select id="editReportStatus">
-                        <option selected="selected">opened</option>
-                        <option>closed</option>
-                    </select>
+                <table id ="rap">
+                    <thead>
+                        <tr>
+                            <th>RAP Goal</th>
+                            <th>RAP Achieved</th>
+                            <th>RAP Variance</th>
+                            <th>RAP Points</th>
+                            <th>RAP Team %</th>
+                            <th>RAP Team Met Points</th>
+                        </tr>
+                    </thead>
 
-                </div>
+                    <tbody>
+                        <tr>
+                            <td>85.64%</td>
+                            <td>84.05%</td>
+                            <td style="color:red">-1.85%</td>
+                            <td>3</td>
+                            <td style="color:orange">50%</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                
+            </div>
+
+
+            <h3> CHT </h3>
+
+            <div>
+
+                <table id ="cht">
+                    <thead>
+                        <tr>
+                            <th>CHT Goal</th>
+                            <th>CHT Achieved</th>
+                            <th>CHT Variance</th>
+                            <th>CHT Points</th>
+                            <th>CHT Team %</th>
+                            <th>CHT Team Met Points</th>
+                        </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>9.86</td>
+                                <td>9.39</td>
+                                <td>5%</td>
+                                <td>6</td>
+                                <td>70%</td>
+                                <td>7</td>
+                            </tr>
+                        </tbody>
+                </table>
+    
             </div>
 
         </div>
 
+        <div class='rightSection'>
+
+                <p>Right Section</p>
+        
+            </div>
     </div>
+
+    
 </body>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 <script src="js/sideMenuLayout.js"></script>
 </html>
